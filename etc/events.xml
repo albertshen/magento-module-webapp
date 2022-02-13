@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="pagebuilder_widget_link_generate_before">
+        <observer name="albertmage_pagebuilder_widget_link_generate_before" instance="AlbertMage\Sms\Observer\PageBuilder\Widget\LinkGenerateBefore"/>
+    </event>
+</config>
