@@ -1,3 +1,21 @@
 <?xml version="1.0" ?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="AlbertMage\PageBuilder\Model\Widget\Link">
+        <plugin sortOrder="100" name="webappPageBuilderWidgetLink" type="AlbertMage\Webapp\Plugin\PageBuilder\Widget\LinkPlugin"/>
+    </type>
+    <type name="AlbertMage\PageBuilder\Model\Widget\ProductList">
+        <plugin sortOrder="100" name="webappPageBuilderWidgetProductLink" type="AlbertMage\Webapp\Plugin\PageBuilder\Widget\ProductListPlugin"/>
+    </type>
+    <type name="AlbertMage\PageBuilder\Model\Resource">
+        <plugin sortOrder="100" name="webappPageBuilderResource" type="AlbertMage\Webapp\Plugin\PageBuilder\ResourcePlugin"/>
+    </type>
+    <type name="AlbertMage\Catalog\Model\CategoryList">
+        <plugin sortOrder="100" name="webappCatalogCategoryList" type="AlbertMage\Webapp\Plugin\Catalog\CategoryListPlugin"/>
+    </type>
+    <type name="AlbertMage\Catalog\Model\ProductList">
+        <plugin sortOrder="100" name="webappCatalogProductList" type="AlbertMage\Webapp\Plugin\Catalog\ProductListPlugin"/>
+    </type>
+    <type name="AlbertMage\Catalog\Model\Search">
+        <plugin sortOrder="100" name="webappCatalogSearch" type="AlbertMage\Webapp\Plugin\Catalog\SearchPlugin"/>
+    </type>
 </config>
